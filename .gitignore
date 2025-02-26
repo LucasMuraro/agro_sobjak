@@ -1,0 +1,98 @@
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Dependências do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Módulos do Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IDEs e editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Gradle
+.gradle/
+build/
+bin/
+out/
+*.lock
+
+# Maven (caso esteja usando)
+.mvn/
+target/
+
+# Arquivos temporários e caches
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# React
+build/
+dist/
+.cache/
+.eslintcache
+
+# Configuração de containers (Docker)
+.env
+*.tar
+
+# Outros
+*.env
+*.iml
+*.pid
+*.seed
+*.pid.lock
+coverage/
+*.bak
+*.orig
+*.old
+
+# IntelliJ IDEA
+*.iws
+.idea/
+out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Arquivos específicos do projeto
+results/
+
+# Padrão do IntelliJ IDEA
+/shelf/
+/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Manter o docker-compose
+!docker-compose.yml

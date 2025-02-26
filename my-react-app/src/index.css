@@ -1,0 +1,19 @@
+/* src/index.css */
+.app-header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.app-header nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.app-header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-header nav ul li a:hover {
+  text-decoration: underline;
+}

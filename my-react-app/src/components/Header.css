@@ -1,0 +1,84 @@
+/* Estilização do header e menus dropdown */
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.app-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app-header nav ul li {
+  margin-right: 15px;
+  position: relative;
+}
+
+.app-header nav ul li span,
+.app-header nav ul li a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-header nav ul li span:hover,
+.app-header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submenu {
+  display: none; /* Esconde o submenu por padrão */
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 5px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 150px; /* Define a largura mínima do submenu */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.submenu li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Exibir o submenu quando o item do menu principal é hover */
+.app-header nav ul li:hover .submenu,
+.submenu.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}

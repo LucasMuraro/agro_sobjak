@@ -1,0 +1,4 @@
+Executar:
+npm install axios
+
+node testRequests.js
